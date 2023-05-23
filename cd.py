@@ -15,22 +15,15 @@ Joint = df['Status'] + ' ' + df['Reason']
 Joint = np.where(pd.isnull(Joint), statuses, Joint)
 
 # Set color palette
-colors = sns.color_palette('bright')
+colors = sns.color_palette('Blues')
 
 # Create a pie chart
 plt.figure(figsize=(8, 6))  # Specify the figure size in inches
 plt.pie(occurrences, labels=Joint, autopct='%1.1f%%', colors=colors)
-
-# Add legend
-legend_labels = [f'{s} - {r}' for s, r in zip(df['Status'], df['Reason'])]
-plt.legend(legend_labels, loc='lower left')
-
-# Add title
 plt.title('Pipeline Job Summary')
 
 # Add color indicators and labels
 patches, _ = plt.pie(occurrences, colors=colors)
-plt.legend(patches, legend_labels, loc='best')
 
 # Save the pie chart as an image
 plt.savefig('pipeline_job_summary.jpg', dpi=300)
