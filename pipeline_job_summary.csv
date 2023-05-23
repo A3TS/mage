@@ -1,6 +1,8 @@
 Status,Reason,Occurrences
-"failed","cannot_reach_downstream_entity",2
-"failed","missing_configuration",3
-"failed","too_many_jobs",3
-"processing","n/a",7
-"success","n/a",5
+"failed","cannot_reach_downstream_entity",1
+"failed","contact_admin",2
+"failed","missing_configuration",4
+"failed","out_of_memory",1
+"failed","too_many_jobs",1
+"processing","n/a",5
+"success","n/a",6
