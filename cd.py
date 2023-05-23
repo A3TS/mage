@@ -15,7 +15,7 @@ Joint = df['Status'] + ' ' + df['Reason']
 Joint = np.where(pd.isnull(Joint), statuses, Joint)
 
 # Set color palette
-colors = sns.color_palette('Blues')
+colors = sns.color_palette('Pastel2')
 
 # Create a pie chart
 plt.figure(figsize=(8, 6))  # Specify the figure size in inches
@@ -26,6 +26,6 @@ plt.title('Pipeline Job Summary')
 patches, _ = plt.pie(occurrences, colors=colors)
 
 # Save the pie chart as an image
-plt.savefig('pipeline_job_summary.jpg', dpi=300)
+plt.savefig('pipeline_job_summary55555.jpg', dpi=300)
 plt.show()
 
