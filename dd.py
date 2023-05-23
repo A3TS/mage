@@ -12,7 +12,7 @@ occurrences = df['Occurrences']
 Joint = df['Status'] + ' ' + df['Reason']
 
 #Set color palette
-colors = sns.color_palette('bright')
+colors = sns.color_palette('pastel')
 
 #Create a pie chart
 plt.figure(figsize=(8, 6)) # Specify the figure size in inches

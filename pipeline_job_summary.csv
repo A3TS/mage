@@ -1,9 +1,6 @@
 Status,Reason,Occurrences
 "failed","cannot_reach_downstream_entity",2
-"failed","contact_admin",1
-"failed","invalid_yaml",1
-"failed","missing_configuration",1
-"failed","out_of_memory",3
-"failed","too_many_jobs",1
-"processing","n/a",9
-"success","n/a",2
+"failed","missing_configuration",3
+"failed","too_many_jobs",3
+"processing","n/a",7
+"success","n/a",5
